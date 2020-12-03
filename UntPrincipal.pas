@@ -60,7 +60,7 @@ type
     procedure btnFornecedoresClick(Sender: TObject);
     procedure btnRelatóriosClick(Sender: TObject);
     procedure Clculodesalrio1Click(Sender: TObject);
-
+    procedure AbreCaixa;
   private
     { Private declarations }
   public
@@ -85,6 +85,11 @@ begin
     Application.CreateForm(TFrmCalcCalorias, FrmCalcCalorias);
   end;
     FrmCalcCalorias.Show;
+end;
+
+procedure TFrmPrincipal.AbreCaixa;
+begin
+  Close;
 end;
 
 procedure TFrmPrincipal.btnCalculadoraClick(Sender: TObject);
